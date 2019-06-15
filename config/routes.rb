@@ -11,5 +11,6 @@ root :to => 'menu#inicio'
   get 'welcome/Servicio'
   post 'pages/mimetodo'
   get 'proyecto_vista/caracteristica'
+  get 'proyecto_vista/departamento'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

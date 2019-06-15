@@ -6,7 +6,7 @@ class ProyectoVistaController < ApplicationController
   
 def ubicacion
 end
-def ubicacion
+def caracteristica
 end
 
 end

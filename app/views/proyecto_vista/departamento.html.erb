@@ -1,0 +1,342 @@
+<tr>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="css/estilos.css"> -->
+<style type="text/css">
+
+.container{
+  width: 98%;
+  margin: 0 auto;
+}
+
+.container .resumen {
+  float: left;
+  width: 30%;
+}
+
+.container .resumen .detalle{
+  width: 98%;
+  padding: 5px;
+  margin: 0 auto;
+  background: silver;
+  text-align: center;
+}
+
+.container .resumen .detalle .imgPrincipal{
+  width: 100%;
+  height: 200px;
+}
+
+.container .resumen .filtros{
+  width: 98%;
+  padding: 5px;
+  margin: 0 auto;
+  background: silver;
+  text-align: left;
+}
+
+
+.filtros {
+  width: 200px;
+}
+
+.filtros a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.filtros a:hover {
+  background-color: #ccc;
+}
+
+.filtros a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+.container .cuerpo {
+  float: left;
+  width: 70%;
+}
+
+.container .cuerpo .titulo {
+  width: 99%;
+  margin: 0px auto;
+  height: 45px;
+  background-color: #4CAF50;
+  text-align: center;
+}
+
+.container .cuerpo .titulo strong {
+   padding-bottom: 15px;
+}
+
+/*Imagenes*/
+.container .cuerpo .gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 23%;
+}
+
+d.container .cuerpo .gallery:hover {
+  border: 1px solid #777;
+}
+
+.container .cuerpo .gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.container .cuerpo .desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 890px) {
+
+.container .resumen{
+  width: 40%;
+}
+
+.container .cuerpo{
+  width: 60%;
+}
+
+
+ .container .cuerpo .gallery {
+  background-color: #eee;
+  float: left;
+  width: 45%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+.container .resumen{
+  width: 100%;
+}
+
+.container .cuerpo{
+  width: 100%;
+}
+
+
+ .container .cuerpo .gallery {
+  background-color: #eee;
+  float: left;
+  width: 98%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="resumen">
+      <div class="detalle">
+        
+        <img class= "imgPrincipal"src="/assets/Proy1.jpg" >
+        <strong> Proyecto Miraflores</strong>
+      </div>
+    <body>
+
+
+  <!DOCTYPE html>
+<html>
+<style>
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 40%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 40%;
+  background: white;
+}
+</style>
+<body>
+
+  <h1>Proyecto Miraflores</h1>
+  <label class="container">Caracteristicas
+    <input type="radio" checked="checked" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Planos
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Areas Comunes
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Departamentos
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Ubicacion
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+
+</body>
+</html>
+
+</body>
+    </div>
+    <div class="cuerpo">
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="https://cdn1.infocasas.com.uy/web/5a181c9cbd4c0_infocdn__80041969.jpg.th460.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 1 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="http://pp.e3.pe/ima/0/0/0/2/0/20175.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 2 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/03/28/58db31cad3faf.jpeg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 3 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/03/28/58db31cad3faf.jpeg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 4 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="https://cdn1.infocasas.com.uy/web/5a181c9cbd4c0_infocdn__80041969.jpg.th460.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 1 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="http://pp.e3.pe/ima/0/0/0/2/0/20175.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 2 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/03/28/58db31cad3faf.jpeg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 3 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/03/28/58db31cad3faf.jpeg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 4 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_5terre.jpg">
+            <img src="https://cdn1.infocasas.com.uy/web/5a181c9cbd4c0_infocdn__80041969.jpg.th460.jpg" alt="Cinque Terre" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 1 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_forest.jpg">
+            <img src="http://pp.e3.pe/ima/0/0/0/2/0/20175.jpg" alt="Forest" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 2 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/03/28/58db31cad3faf.jpeg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 3 - Full Duplex</div>
+        </div>
+
+        <div class="gallery">
+          <a target="_blank" href="img_lights.jpg">
+            <img src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/03/28/58db31cad3faf.jpeg" alt="Northern Lights" width="600" height="400">
+          </a>
+          <div class="desc">Departamento piso 4 - Full Duplex</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- <script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
