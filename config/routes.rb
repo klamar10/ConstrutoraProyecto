@@ -1,9 +1,14 @@
-Rails.application.routes.draw do
-  get 'static/about'
+Rails.application.routes.draw do	
+  get 'menu/inicio'
 
-  get 'static/services'
+  get 'proyecto_vista/proyecto'
+  
 
-  #get 'home/index'
-  root 'about/index'
+
+  resources :posts
+  get 'welcome/index'
+  get 'welcome/RegProy'
+  get 'welcome/Servicio-Cliente'
+  post 'pages/mimetodo'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

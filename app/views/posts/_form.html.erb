@@ -1,0 +1,48 @@
+<%= form_with(model: post, local: true ) do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <br>
+<div style="text-align: center; ">
+  <div class="row ">
+    <div class="col-3">
+      <%= form.label :tittle,"Nombre" %>
+    </div>
+    <div class="col-7">
+      <%= form.text_field :tittle, {:class => "form-control"} %>
+    </div>
+<br>
+<!--<div class="row col-7">
+    <%= form.label :descripttion, "descripcion" %>
+    <%= form.text_area :descripttion, {:class => "form-control", :rows =>5} %>
+</div>
+<br>-->
+</div>
+<br>
+<div class="row ">
+    <div class="col-3">
+      <%= form.label :descripttion,"Contraseña" %>
+    </div>
+    <div class="col-7">
+      <%= form.text_field :descripttion, {:class => "form-control"} %>
+    </div>
+</div>
+<br>
+
+<br>
+<div class="actions">
+    <%= form.submit "Enviar datos", :class => "btn btn-outline-dark" %>
+</div>
+<br>
+
+</div>
+
+<% end %>
