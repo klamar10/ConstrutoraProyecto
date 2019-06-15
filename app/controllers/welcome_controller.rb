@@ -15,5 +15,6 @@ class WelcomeController < ApplicationController
     puts c
   end
 
-  
+  def Servicio
+  end
 end

@@ -1,0 +1,121 @@
+<br>
+<table class="table" style="text-align: center;">
+  <tr>
+      <th style="margin: center">Caracteristicas</th>
+      <th colspan="10"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <img src="/assets/Proy1.jpg"width="350" height="400" style="margin: 10" >
+      </td>
+       <td>
+        <img src="/assets/interiores.jpg"width="250" height="300" style="margin: 1000" >
+      </td>
+    </tr>
+  </tbody>
+</table>
+ <thead>
+
+<!DOCTYPE html>
+<html>
+<style>
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 40%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 40%;
+  background: white;
+}
+</style>
+<body>
+
+  <h1>Proyecto Miraflores</h1>
+  <label class="container">Caracteristicas
+    <input type="radio" checked="checked" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Planos
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Areas Comunes
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">epartamentos
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Ubicacion
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+
+</body>
+</html>
+
+    
+		<!--<img src="images/Proy1.jpg" width="350" height="500" />
+>>>>>>> e814b3345b7aeed063b5036609e898e2ce817ef5
+		<img src="images/Proy2.jpg" width="350" height="500" />
+		<img src="images/Proy3.jpg" width="350" height="500" />
+		-->
+	
