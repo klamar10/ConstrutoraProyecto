@@ -9,4 +9,11 @@ end
 def caracteristica
 end
 
+def departamento
+end
+
+def plano
+end
+
+
 end
