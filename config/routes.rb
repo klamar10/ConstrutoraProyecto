@@ -1,8 +1,8 @@
-Rails.application.routes.draw do	
+Rails.application.routes.draw do
+root :to => 'menu#inicio'	
   get 'menu/inicio'
 
-  get 'proyecto_vista/proyecto'
-  
+  get 'proyecto_vista/proyecto'  
 
 
   resources :posts
