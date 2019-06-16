@@ -14,6 +14,11 @@ end
 
 def plano
 end
-
-
+def PBarranco
+end
+def PMiraflores
+end
+def PSurco
+end
+	
 end

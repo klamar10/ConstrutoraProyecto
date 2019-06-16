@@ -4,7 +4,10 @@ root :to => 'menu#inicio'
   get 'menu/Nosotros'
   get 'proyecto_vista/proyecto'  
   get 'proyecto_vista/ubicacion'
-
+  get 'proyecto_vista/PBarranco'
+  get 'proyecto_vista/PMiraflores'
+  get 'proyecto_vista/PSurco'
+  
   resources :posts
   get 'welcome/index'
   get 'welcome/RegProy'

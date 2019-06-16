@@ -1,0 +1,133 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+    $("input[type=radio]").click(function(event){
+        var valor = $(event.target).val();
+        if(valor =="Ubicacion"){
+            $("#div1").show();
+            $("#div2").hide();
+            $("#div3").hide();
+            $("#div4").hide();
+            $("#div5").hide();
+        } else if (valor == "Planos") {
+            $("#div1").hide();
+            $("#div2").show();
+            $("#div3").hide();
+            $("#div4").hide();
+            $("#div5").hide();
+        } else if (valor == "Areas comunes") { 
+            // Otra cosa
+            $("#div1").hide();
+            $("#div2").hide();
+            $("#div3").show();
+            $("#div4").hide();
+            $("#div5").hide();
+        }
+        else if (valor == "Departamentos") { 
+            // Otra cosa
+            $("#div1").hide();
+            $("#div2").hide();
+            $("#div3").hide();
+            $("#div4").show();
+            $("#div5").hide();
+        }else if (valor == "Caracteristicas") { 
+            // Otra cosa
+            $("#div1").hide();
+            $("#div2").hide();
+            $("#div3").hide();
+            $("#div4").hide();
+            $("#div5").show();
+        }
+    });
+});
+</script>
+<style type="text/css">
+	.img{
+    border: 3px solid black;
+    margin: 10px 0px 0px -90px;
+     width: 400px;
+     height: 620px;
+     text-align: center;
+  }
+</style>
+<br>
+<div class="img">
+	<h2>Proyecto Barranco</h2>
+<img src="/assets/Proy3.jpg"width="350" height="350" >
+<div style="margin:20px 0px 0px 25px; text-align: left; ">
+<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+<p class="auto-style3">
+    <input name="pago1" type="radio" value="Ubicacion"/>
+
+        &nbsp;
+        <span class="auto-style4">Ubicacion
+        </span>
+</p>
+
+<p class="auto-style3">
+    <input checked="checked" name="pago1" type="radio" value="Planos"/>
+    <span class="auto-style4"> 
+        Planos
+    </span>
+</p>
+
+<p class="auto-style3">
+    <input checked="checked" name="pago1" type="radio" value="Areas comunes"/>
+    <span class="auto-style4"> 
+        Areas comunes
+    </span>
+</p>
+<p class="auto-style3">
+    <input checked="checked" name="pago1" type="radio" value="Departamentos"/>
+    <span class="auto-style4"> 
+        Departamentos
+    </span>
+</p>
+<p class="auto-style3">
+    <input checked="checked" name="pago1" type="radio" value="Caracteristicas"/>
+    <span class="auto-style4"> 
+        Caracteristicas
+    </span>
+</p>
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="div1" style="display:none;">
+    <center>
+      <span>1</span>
+    </center>
+</div>
+        
+<div id="div2" style="display:none;">
+    <center>
+      <span>2</span>
+    </center>
+</div>
+<div id="div3" style="display: none; ">
+    <center>
+      <span>3</span>
+    </center>
+</div>
+<div id="div4" style="display: none; ">
+    <div style="margin: -600px 0px 0px 500px">
+  	<h2>Departamentos</h2>
+  </div>
+</div>
+<div id="div5" style="display:  ">
+  <div style="margin: -600px 0px 0px 500px">
+  	<h2>Caracteristicas</h2>
+  </div>
+</div>
+</div>
+</div>
