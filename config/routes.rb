@@ -7,14 +7,15 @@ root :to => 'menu#inicio'
   get 'proyecto_vista/PBarranco'
   get 'proyecto_vista/PMiraflores'
   get 'proyecto_vista/PSurco'
-  
+   post 'pages/mimetodo'
+  get 'proyecto_vista/caracteristica'
+  get 'proyecto_vista/departamento'
+  get 'proyecto_vista/plano's
   resources :posts
+  #welcom / registrar
   get 'welcome/index'
   get 'welcome/RegProy'
   get 'welcome/Servicio'
-  post 'pages/mimetodo'
-  get 'proyecto_vista/caracteristica'
-  get 'proyecto_vista/departamento'
-  get 'proyecto_vista/plano'
+ 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
