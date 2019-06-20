@@ -11,6 +11,7 @@ root :to => 'menu#inicio'
   get 'proyecto_vista/caracteristica'
   get 'proyecto_vista/departamento'
   get 'proyecto_vista/plano'
+  get 'proyecto_vista/consultar'
   resources :posts
   #welcom / registrar
   get 'welcome/index'

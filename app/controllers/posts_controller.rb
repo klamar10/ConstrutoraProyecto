@@ -4,7 +4,10 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+
     @posts = Post.all
+    puts @posts
+    puts @posts.inspect
   end
 
   # GET /posts/1
