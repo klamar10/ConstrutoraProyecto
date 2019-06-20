@@ -10,7 +10,7 @@ root :to => 'menu#inicio'
    post 'pages/mimetodo'
   get 'proyecto_vista/caracteristica'
   get 'proyecto_vista/departamento'
-  get 'proyecto_vista/plano's
+  get 'proyecto_vista/plano'
   resources :posts
   #welcom / registrar
   get 'welcome/index'
