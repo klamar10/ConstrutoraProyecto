@@ -1,0 +1,149 @@
+<!---Estos es a funcion del radio button -->
+<script type="text/javascript">
+	$(document).ready(function() {
+    $("input[type=radio]").click(function(event){
+        var valor = $(event.target).val();
+        if(valor =="Ubicacion"){
+            $("#div1").show();
+            $("#div2").hide();
+            $("#div3").hide();
+            $("#div4").hide();
+            $("#div5").hide();
+        } else if (valor == "Planos") {
+            $("#div1").hide();
+            $("#div2").show();
+            $("#div3").hide();
+            $("#div4").hide();
+            $("#div5").hide();
+        } else if (valor == "Areas comunes") { 
+            // Otra cosa
+            $("#div1").hide();
+            $("#div2").hide();
+            $("#div3").show();
+            $("#div4").hide();
+            $("#div5").hide();
+        }
+        else if (valor == "Departamentos") { 
+            // Otra cosa
+            $("#div1").hide();
+            $("#div2").hide();
+            $("#div3").hide();
+            $("#div4").show();
+            $("#div5").hide();
+        }else if (valor == "Caracteristicas") { 
+            // Otra cosa
+            $("#div1").hide();
+            $("#div2").hide();
+            $("#div3").hide();
+            $("#div4").hide();
+            $("#div5").show();
+        }
+    });
+});
+</script>
+<style type="text/css">
+	.img{
+    border: 3px solid black;
+    margin: 10px 0px 0px -90px;
+     width: 400px;
+     height: 620px;
+     text-align: center;
+  }
+</style>
+<br>
+<div class="img">
+	<h2>Proyecto <%= @proyectoSearch[1] %></h2>
+<img src="/assets/Proy3.jpg"width="350" height="350" >
+<div style="margin:20px 0px 0px 25px; text-align: left; ">
+<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+<p class="auto-style3">
+    <input name="pago1" type="radio" value="Ubicacion"/>
+
+        &nbsp;
+        <span class="auto-style4">Ubicacion
+        </span>
+</p>
+
+<p class="auto-style3">
+    <input checked="checked" name="pago1" type="radio" value="Planos"/>
+    <span class="auto-style4"> 
+        Planos
+    </span>
+</p>
+
+<p class="auto-style3">
+    <input checked="checked" name="pago1" type="radio" value="Areas comunes"/>
+    <span class="auto-style4"> 
+        Areas comunes
+    </span>
+</p>
+<p class="auto-style3">
+    <input checked="checked" name="pago1" type="radio" value="Departamentos"/>
+    <span class="auto-style4"> 
+        Departamentos
+    </span>
+</p>
+<p class="auto-style3">
+    <input checked="checked" name="pago1" type="radio" value="Caracteristicas"/>
+    <span class="auto-style4"> 
+        Caracteristicas
+    </span>
+</p>
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="div1" style="display:none;">
+	 <div style="margin: -600px 0px 0px 500px">
+	    <br>
+		<h7 style="text-align: center; margin: 200px" >Direccion: Avenida Ernesto Diez Canseco 316, Miraflores 15074</h7>
+		<br>
+		<div class="mapa">
+		    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.8522568694275!2d-77.03047968578655!3d-12.122259546608554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c819707de041%3A0x9e8d8fc578c22bf9!2sCibertec!5e0!3m2!1ses-419!2spe!4v1560585300243!5m2!1ses-419!2spe" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+        
+<div id="div2" style="display:none;">
+    <center>
+      <span>2</span>
+    </center>
+</div>
+<div id="div3" style="display: none; ">
+    <div style="margin: -600px 0px 0px 500px">
+  	<h2>Areas Comunes</h2>
+  	 <% @proyectoSearch[6].each do |area| %>
+        <td>
+          <!-- Usar image_path() de ruby on rails-->
+          <img src="/assets/Proy3.jpg"width="50" height="50" >
+          <div > <%= area[0]%></div>
+          <div > <%= area[1]%></div>
+      </td>
+      <% end %>
+  </div>
+</div>
+<div id="div4" style="display: none; ">
+    <div style="margin: -600px 0px 0px 500px">
+  	<h2>Departamentos</h2>
+  </div>
+</div>
+<div id="div5" style="display:  ">
+  <div style="margin: -600px 0px 0px 500px">
+  	<h2>Caracteristicas</h2>
+  	<%= @proyectoSearch[3] %> 
+  	<%= @proyectoSearch[4] %> 
+  </div>
+</div>
+</div>
+</div>
