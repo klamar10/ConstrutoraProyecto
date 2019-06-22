@@ -18,6 +18,7 @@ root :to => 'menu#inicio'
   #welcom / registrar
   get 'welcome/index'
   get 'welcome/RegProy'
+  get 'welcome/Cotizaciones'
   get 'welcome/Servicio'
   #Registrar usuario
   post "welcome" => "welcome#create"

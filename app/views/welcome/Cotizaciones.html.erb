@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+         
+    <style type="text/css">
+      .cities {
+        margin: 50px 100px 90px 300px;
+        
+      } 
+      .label{
+        margin: 0 0 0 500px;
+      }
+      
+        #global {
+        height: 200px;
+        width: 250px;
+        border: 1px solid black;
+        background: white;
+        overflow-y: scroll;
+        text-align: left;
+        margin:0px 250px 20px 120px;
+      }
+      #mensajes {
+        height: center;
+      }
+      .texto {
+        padding:30px;
+        background:white;
+      }
+      .boton{
+       
+        margin: 30px 350px 90px 250px;
+      }
+      .prueba   {
+        width: 300px
+        height:200px;
+
+        }
+        .marco   {
+       width:750px;
+       margin:auto;
+       height: 210px:;
+        }
+</style>
+</head>
+
+<body>
+  <h1 style="text-align: center;">Mis Cotizaciones</h1>
+<div class="container">
+        
+    <section class="listQuotes">
+        <article class="listQuotes__type active">
+            <a href="http://localhost:3000/welcome/Cotizaciones" class="">
+                <label for="">Listado General</label>
+                <span>(0)</span>
+            </a>
+        </article>
+        <article class="listQuotes__type ">
+            <a href="http://localhost:3000/welcome/Cotizaciones" class="">
+                <label for="">Cotizaciones Favoritas</label>
+                <span>(0)</span>
+            </a>
+        </article>
+            </section>        
+        <section class="tableQuote">
+        <div class="tableQuote__element tableQuote__element--result">
+            <span class="span_color_blue">Resultado de la Búsqueda:</span>
+            <span>0</span>
+        </div>
+        <br>
+        <div class="tableQuote__element tableQuote__element--order">
+            <span class="span_color_blue">Ordenar por: </span>
+            <select class="selectOrderQuote" name="" id="selectOrderQuote">
+                <option value="1" order-by="">Fecha de Cotización</option>
+                <option value="2" order-by="">Proyecto</option>
+                <option value="4" order-by="">Dormitorios</option>
+                <option value="5" order-by="">Area</option>
+                <option value="6" order-by="">Distrito</option>
+                <option value="7" order-by="">Precio</option>
+            </select>
+        </div>
+        <article class="containerListTableQuote">
+            <div class="dataTable-wrapper dataTable-loading no-footer sortable fixed-columns"><div class="dataTable-top"></div><div class="dataTable-container"><table id="listGeneralQuote" class="table listTableQuote dataTable-table">
+                <thead>
+                    <tr>
+                        <th data-sortable="false" style="width: 13.7234%;">F. Cotización</th>
+                        <th data-sortable="false" style="width: 10.3191%;">Proyecto</th>
+                        <th data-sortable="false" style="width: 13.5106%;">Inmobiliaria</th>
+                        <th data-sortable="false" style="width: 8.29787%;">Dorm.</th>
+                        <th data-sortable="false" style="width: 7.02128%;">Área<br>(m<sup>2</sup>)</th>
+                        <th data-sortable="false" style="width: 9.25532%;">Distrito</th>
+                        <th data-sortable="false" style="width: 13.7234%;">Precio Desde</th>
+                        <th data-sortable="false" style="width: 15.4255%;">Calificación de<br> Cotizaciones</th>
+                        <th data-sortable="false" style="width: 8.93617%;">Acción</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table></div><div class="dataTable-bottom"><div class="dataTable-info"></div><div class="dataTable-pagination"></div></div></div>
+        </article>
+    </section>
+</div>
+</body>
+
+  
