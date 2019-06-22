@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'modelo/index'
-
 root :to => 'menu#inicio'	
   get 'menu/inicio'
   get 'menu/Nosotros'
@@ -19,9 +17,13 @@ root :to => 'menu#inicio'
   get 'welcome/index'
   get 'welcome/RegProy'
   get 'welcome/Servicio'
+
+
+
   #Registrar usuario
   post "welcome" => "welcome#create"
   get "welcome/:id" => "welcome#datos"
-  get "welcome" => "welcome#index"
+  get "welcome" => "welcome#new"
+  root 'modelo#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -36,8 +36,7 @@ end
 
 private
   def post_params
-    params.require(:post).permit(:Nombre, :apellido, :email,
-      :dni , :telef,:contra)
+    params.require(:post).permit(:Nombre, :apellido, :email,:dni , :telef,:contra)
   end
 
 end
