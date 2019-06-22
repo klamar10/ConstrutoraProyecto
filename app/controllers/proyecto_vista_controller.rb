@@ -1,6 +1,5 @@
 class ProyectoVistaController < ApplicationController
-  def proyecto
-  end
+
   def caracteristica
   end
   
@@ -19,6 +18,9 @@ end
 def PMiraflores
 end
 def PSurco
+end
+
+def consultar
 end
 	
 end
