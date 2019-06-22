@@ -17,4 +17,20 @@ class WelcomeController < ApplicationController
 
   def Servicio
   end
+
+
+  def create
+    @post = Post.new(post_params)
+
+    render :new
+end
+def datos
+  @post = Post.find(params[:id])
+end
+
+private
+  def post_params
+    params.require(:post).permit(:title, :text)
+  end
+
 end

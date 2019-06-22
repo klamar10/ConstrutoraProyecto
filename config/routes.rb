@@ -16,6 +16,9 @@ root :to => 'menu#inicio'
   get 'welcome/index'
   get 'welcome/RegProy'
   get 'welcome/Servicio'
- 
+  #Registrar usuario
+  post "welcome" => "welcome#create"
+  get "welcome/:id" => "welcome#datos"
+  get "welcome" => "welcome#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
