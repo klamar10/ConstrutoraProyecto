@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'modelo/index'
+
 root :to => 'menu#inicio'	
   get 'menu/inicio'
   get 'menu/Nosotros'
