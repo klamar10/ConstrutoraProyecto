@@ -20,15 +20,13 @@ class WelcomeController < ApplicationController
 
 
   def create
-    @post = Post.new(post_params)
-
-    render :new
+   
 end
 def datos
-  @post = Post.find(params[:id])
+
 end
 def new
-  @posts = Post.all
+
 end
 
 
@@ -36,8 +34,7 @@ end
 
 private
   def post_params
-    params.require(:post).permit(:Nombre, :apellido, :email,
-      :dni , :telef,:contra)
+ 
   end
 
 end
