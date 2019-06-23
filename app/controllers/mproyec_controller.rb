@@ -1,0 +1,2 @@
+class MproyecController < ApplicationController
+end
