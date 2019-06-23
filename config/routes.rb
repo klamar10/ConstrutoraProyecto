@@ -14,16 +14,7 @@ root :to => 'menu#inicio'
   get 'proyecto_vista/consultar'
   resources :posts
   #welcom / registrar
-  get 'welcome/index'
-  get 'welcome/RegProy'
+
   get 'welcome/Servicio'
-
-
-
-  #Registrar usuario
-  post "welcome" => "welcome#create"
-  get "welcome/:id" => "welcome#datos"
-  get "welcome" => "welcome#new"
-  root 'modelo#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
