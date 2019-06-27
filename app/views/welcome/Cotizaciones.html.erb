@@ -46,29 +46,38 @@
 </head>
 
 <body>
-  <h1 style="text-align: center;">Mis Cotizaciones</h1>
+  <h1 style="text-align: center;">MIS COTIZACIONES</h1>
+
 <div class="container">
-        
+           <br/>   <br/>
     <section class="listQuotes">
+        <div class="col-lg-12">
+            <div class="row">
         <article class="listQuotes__type active">
             <a href="http://localhost:3000/welcome/Cotizaciones" class="">
-                <label for="">Listado General</label>
-                <span>(0)</span>
+                <button type="button" class="btn btn-primary">Listado General </button>
+                
             </a>
-        </article>
+            
+           </article>
+            &nbsp;&nbsp;&nbsp; 
         <article class="listQuotes__type ">
             <a href="http://localhost:3000/welcome/Cotizaciones" class="">
-                <label for="">Cotizaciones Favoritas</label>
-                <span>(0)</span>
+                <button type="button" class="btn btn-warning">Cotizaciones Favoritas</button>
             </a>
         </article>
-            </section>        
+        </div>
+</div>
+            </section>   
+            <br/><br/><br/>
+
         <section class="tableQuote">
+            <div class="row">
         <div class="tableQuote__element tableQuote__element--result">
             <span class="span_color_blue">Resultado de la Búsqueda:</span>
             <span>0</span>
         </div>
-        <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
         <div class="tableQuote__element tableQuote__element--order">
             <span class="span_color_blue">Ordenar por: </span>
             <select class="selectOrderQuote" name="" id="selectOrderQuote">
@@ -80,9 +89,11 @@
                 <option value="7" order-by="">Precio</option>
             </select>
         </div>
-        <article class="containerListTableQuote">
-            <div class="dataTable-wrapper dataTable-loading no-footer sortable fixed-columns"><div class="dataTable-top"></div><div class="dataTable-container"><table id="listGeneralQuote" class="table listTableQuote dataTable-table">
-                <thead>
+        </div>
+        <article class="table">
+            <div class="dataTable-wrapper dataTable-loading no-footer sortable fixed-columns"><div class="dataTable-top"></div><div class="dataTable-container">
+            <table id="listGeneralQuote" class="table listTableQuote dataTable-table">
+                <thead class="thead-light">
                     <tr>
                         <th data-sortable="false" style="width: 13.7234%;">F. Cotización</th>
                         <th data-sortable="false" style="width: 10.3191%;">Proyecto</th>
@@ -95,8 +106,45 @@
                         <th data-sortable="false" style="width: 8.93617%;">Acción</th>
                     </tr>
                 </thead>
-                <tbody></tbody>
-            </table></div><div class="dataTable-bottom"><div class="dataTable-info"></div><div class="dataTable-pagination"></div></div></div>
+                <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>San Isidro</td>
+                      <td>Graña y Montero</td>
+                      <td>@3</td>
+                      <td>110</td>
+                      <td>San Isidro</td>
+                      <td>280,000</td>
+                      <td>Alta</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                       <td>Miraflores</td>
+                      <td>Odrebecht</td>
+                      <td>@2</td>
+                      <td>90</td>
+                      <td>Miraflores</td>
+                      <td>200,000</td>
+                      <td>Media</td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                       <td>Los Olivos</td>
+                      <td>OAS</td>
+                      <td>@1</td>
+                      <td>70</td>
+                      <td>Los Olivos</td>
+                      <td>120,000</td>
+                      <td>Baja</td>
+                      <td></td>
+                    </tr>
+                    
+
+                </tbody>
+            </table>
+        </div><div class="dataTable-bottom"><div class="dataTable-info"></div><div class="dataTable-pagination"></div></div></div>
         </article>
     </section>
 </div>
