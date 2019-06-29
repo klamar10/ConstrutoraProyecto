@@ -31,7 +31,7 @@ class ProyectoVistaController < ApplicationController
 			  	[ imagen= 'hola.jpg', descripcion= 'mejorandola']
 			  ] 
 			],
-			[ id = 4, name = 'Barranco', imagen = '/assets/Proy2.jpg' ],
+			[ id = 4, name = 'Barranco', imagen = '/assets/Proy2.jpg' ], v
 			[ id = 5, name = 'Magdalena', imagen = '/assets/Proy3.jpg' ]
 		]
 
