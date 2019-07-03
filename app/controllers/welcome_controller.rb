@@ -17,17 +17,20 @@ class WelcomeController < ApplicationController
 
   def Servicio
   end
-
+  
+  def iniciosesion
+    render :layout => false
+  end
 
   def create
    
-end
-def datos
+  end
+  def datos
 
-end
-def new
+  end
+  def new
 
-end
+  end
 
 
 
