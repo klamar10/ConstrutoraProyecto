@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  caracteristicas: MyString
+  areacomun: MyText
+  pisos: 1
+  ubicacion: MyText
+
+two:
+  nombre: MyString
+  caracteristicas: MyString
+  areacomun: MyText
+  pisos: 1
+  ubicacion: MyText

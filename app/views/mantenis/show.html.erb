@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @manteni.nombre %>
+</p>
+
+<p>
+  <strong>Caracteristicas:</strong>
+  <%= @manteni.caracteristicas %>
+</p>
+
+<p>
+  <strong>Areas Comunes:</strong>
+  <%= @manteni.areacomun %>
+</p>
+
+<p>
+  <strong>Pisos:</strong>
+  <%= @manteni.pisos %>
+</p>
+
+<p>
+  <strong>Ubicacion:</strong>
+  <%= @manteni.ubicacion %>
+</p>
+
+<%= link_to 'Editar', edit_manteni_path(@manteni) %> |
+<%= link_to 'Atras', mantenis_path %>

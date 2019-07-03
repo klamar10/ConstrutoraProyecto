@@ -1,38 +1,19 @@
 <br>
 <table class="table" style="text-align: center;">
-  <tr>
-      <th>Proyecto Miraflores</th>
-      <th>Proyecto Barranco</th>
-      <th>Proyecto Surco</th>
-      <th colspan="10"></th>
-    </tr>
-  </thead>
-  <tbody>
     <tr>
-      <td>
-        <img src="/assets/Proy3.jpg"width="350" height="500" >
-      
-        <div style="margin: 5px">
-        <%= link_to "Detalle", { :controller => "proyecto_vista", :action => "PMiraflores" }, :class => "btn btn-outline-dark" %>
-        </div>
-      </td>
-      <td>
-        <img src="/assets/Proy2.jpg" width="350" height="500">
+      <% @listProyecto.each do |proyecto| %>
+        <td>
+          <!-- Usar image_path() de ruby on rails-->
+          <img src="/assets/Proy3.jpg"width="350" height="500" >
+          <div > <%= proyecto[1]%></div>
+
           <div style="margin: 5px">
-        <%= link_to "Detalle", { :controller => "proyecto_vista", :action => "PBarranco" }, :class => "btn btn-outline-dark" %>
-        </div>
-      </td>
-      <td>
-        <img src="/assets/Proy3.jpg" width="350" height="500">
-        <div style="margin: 5px">
-        <%= link_to "Detalle", { :controller => "proyecto_vista", :action => "PSurco" }, :class => "btn btn-outline-dark" %>
-        </div>
-      </td>
+          <%= link_to "Detalle", { :controller => "proyecto_vista", :action => "detalle", :id => proyecto[0] }, :class => "btn btn-outline-dark" %>
+          </div>
+        </td>
+      <% end %>
+      
     </tr>
-
-
-
-  </tbody>
 
 
 

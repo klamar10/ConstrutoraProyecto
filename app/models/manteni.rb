@@ -1,0 +1,2 @@
+class Manteni < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+module MantenisHelper
+end

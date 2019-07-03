@@ -9,3 +9,46 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
+
+ActiveRecord::Schema.define(version: 20190703040152) do
+
+  create_table "mantenis", force: :cascade do |t|
+    t.string "nombre"
+    t.string "caracteristicas"
+    t.text "areacomun"
+    t.integer "pisos"
+    t.text "ubicacion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.string "tittle"
+    t.text "descripttion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "regusus", force: :cascade do |t|
+    t.text "contrasena"
+    t.string "nombre"
+    t.string "apellido"
+    t.text "email"
+    t.integer "dni"
+    t.integer "telefono"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "welcomes", force: :cascade do |t|
+    t.string "nombre"
+    t.string "apellido"
+    t.string "email"
+    t.integer "dni"
+    t.integer "telef"
+    t.string "contra"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+end
