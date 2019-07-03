@@ -1,0 +1,2 @@
+class Regusu < ApplicationRecord
+end
