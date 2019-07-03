@@ -3,6 +3,11 @@ Rails.application.routes.draw do
 
 
 
+  resources :mantenis
+  
+
+
+  
 root :to => 'menu#inicio'	
   get 'menu/inicio'
   get 'menu/Nosotros'

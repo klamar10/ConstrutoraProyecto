@@ -1,0 +1,50 @@
+<%= form_with(model: manteni, local: true) do |form| %>
+  <% if manteni.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(manteni.errors.count, "error") %> prohibited this manteni from being saved:</h2>
+
+      <ul>
+      <% manteni.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div style="text-align: left;">
+  
+  <div class="field">
+    <%= form.label :Nombre %>
+    <br>
+    <%= form.text_field :nombre, id: :manteni_nombre , :class => 'form-control mb-2 mr-sm-2'%>
+  </div>
+  <div class="field">
+    <%= form.label :Caracteristicas %>
+    <br>
+    <%= form.text_field :caracteristicas, id: :manteni_caracteristicas, :class => 'form-control mb-2 mr-sm-2' %>
+  </div>
+ 
+  <div class="field">
+    <%= form.label  :Areas %>
+    <br>
+    <%= form.text_area :areacomun, id: :manteni_areacomun, :class => 'form-control mb-2 mr-sm-2' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Pisos %>
+    <br>
+    <%= form.number_field :pisos, id: :manteni_pisos, :class => 'form-control mb-2 mr-sm-2' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ubicacion %>
+    <br>
+    <%= form.text_area :ubicacion, id: :manteni_ubicacion , :class => 'form-control mb-2 mr-sm-2'%>
+  </div>
+<br>
+
+  <div class="actions">
+    <%= form.submit %>
+ 
+  </div>
+<% end %>
