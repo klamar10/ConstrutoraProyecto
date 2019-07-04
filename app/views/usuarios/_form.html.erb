@@ -1,0 +1,57 @@
+<%= form_with(model: usuario, local: true) do |form| %>
+  <% if usuario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+
+      <ul>
+      <% usuario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre, id: :usuario_nombre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :apellido %>
+    <%= form.text_field :apellido, id: :usuario_apellido %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_area :email, id: :usuario_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cont %>
+    <%= form.text_area :cont, id: :usuario_cont %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dni %>
+    <%= form.number_field :dni, id: :usuario_dni %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fech %>
+    <%= form.date_select :fech, id: :usuario_fech %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telef %>
+    <%= form.number_field :telef, id: :usuario_telef %>
+  </div>
+
+  <div class="field">
+    <%= form.label :direccion %>
+    <%= form.text_area :direccion, id: :usuario_direccion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
