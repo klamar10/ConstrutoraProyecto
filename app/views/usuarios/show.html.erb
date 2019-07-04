@@ -1,44 +1,59 @@
 <p id="notice"><%= notice %></p>
+<table class="table">
+  <thead>
+    <tr  class="table-danger">
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Email</th>
+      <th>Contraseña</th>
+      <th>Dni</th>
+      <th>Fecha de Nacimiento</th>
+      <th>Telefono</th>
+      <th>Direccion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+<tbody class="table-success">
+  <th>
 
-<p>
-  <strong>Nombre:</strong>
   <%= @usuario.nombre %>
-</p>
 
-<p>
-  <strong>Apellido:</strong>
-  <%= @usuario.apellido %>
-</p>
+</th>
+<th>
+    <%= @usuario.apellido %>
+</th>
+<th>
 
-<p>
-  <strong>Email:</strong>
   <%= @usuario.email %>
-</p>
 
-<p>
-  <strong>Cont:</strong>
+</th>
+<th>
+
   <%= @usuario.cont %>
-</p>
 
-<p>
-  <strong>Dni:</strong>
+</th>
+<th>
+
+
   <%= @usuario.dni %>
-</p>
 
-<p>
-  <strong>Fech:</strong>
+</th>
+<th>
+
   <%= @usuario.fech %>
-</p>
 
-<p>
-  <strong>Telef:</strong>
+</th>
+<th>
+
   <%= @usuario.telef %>
-</p>
 
-<p>
-  <strong>Direccion:</strong>
+</th>
+<th>
+
   <%= @usuario.direccion %>
-</p>
 
+</th>
+</tbody>
+</table>
 <%= link_to 'Edit', edit_usuario_path(@usuario) %> |
 <%= link_to 'Back', usuarios_path %>

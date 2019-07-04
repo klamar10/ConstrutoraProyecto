@@ -14,7 +14,7 @@ root :to => 'menu#inicio'
   get 'menu/Nosotros'
   post 'pages/mimetodo'
   resources :posts
-
+  get 'proyecto_vista/consultar'
   #welcom / registrar
 
   get 'welcome/index'
