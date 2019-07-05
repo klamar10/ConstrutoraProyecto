@@ -18,7 +18,7 @@ class WelcomeController < ApplicationController
   def Servicio
   end
   
-  def inicioSesion
+  def iniciosesion
     render :layout => false
   end
 

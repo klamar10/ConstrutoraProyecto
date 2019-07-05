@@ -20,7 +20,7 @@ root :to => 'menu#inicio'
   get 'welcome/index'
   get 'welcome/RegProy'
   get 'welcome/Cotizaciones'
-  get 'welcome/inicioSesion'
+  get 'welcome/iniciosesion'
 
   get 'welcome/Servicio'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
