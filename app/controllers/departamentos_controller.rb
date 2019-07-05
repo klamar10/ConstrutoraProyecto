@@ -72,3 +72,4 @@ class DepartamentosController < ApplicationController
       params.require(:departamento).permit(:piso, :caracteristicas, :area, :tipo, :precio, :mantenis_id)
     end
 end
+
