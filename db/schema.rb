@@ -29,17 +29,6 @@ ActiveRecord::Schema.define(version: 20190703040152) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "regusus", force: :cascade do |t|
-    t.text "contrasena"
-    t.string "nombre"
-    t.string "apellido"
-    t.text "email"
-    t.integer "dni"
-    t.integer "telefono"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "welcomes", force: :cascade do |t|
     t.string "nombre"
     t.string "apellido"
