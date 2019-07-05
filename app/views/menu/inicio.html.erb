@@ -32,7 +32,7 @@
 <br>
 <div style="text-align: center;">
   <form>
-    <input type="button" value="Consultar" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'"  class="btn-outline-dark btn-lg" />
+    <%= link_to "Consultar", { :controller => "proyecto_vista", :action => "consultar" }, :class => "btn btn-outline-dark btn-lg" %>
     </form>
     <!-- 
     <%= button_to "Consultar", { :controller => "proyecto_vista", :action => "proyecto" }, :class => "btn btn-outline-dark btn-lg" %> Links -->

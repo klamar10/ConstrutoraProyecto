@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190703040152) do
+ActiveRecord::Schema.define(version: 20190704051328) do
 
   create_table "mantenis", force: :cascade do |t|
     t.string "nombre"
@@ -29,6 +29,33 @@ ActiveRecord::Schema.define(version: 20190703040152) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
+  create_table "regusus", force: :cascade do |t|
+    t.text "contrasena"
+    t.string "nombre"
+    t.string "apellido"
+    t.text "email"
+    t.integer "dni"
+    t.integer "telefono"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "usuarios", force: :cascade do |t|
+    t.string "nombre"
+    t.string "apellido"
+    t.text "email"
+    t.text "cont"
+    t.integer "dni"
+    t.date "fech"
+    t.integer "telef"
+    t.text "direccion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+>>>>>>> 220f68fb83178446ad16968b525fb13aae112fcc
   create_table "welcomes", force: :cascade do |t|
     t.string "nombre"
     t.string "apellido"
