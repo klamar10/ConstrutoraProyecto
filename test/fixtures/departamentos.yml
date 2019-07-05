@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  piso: 1
+  caracteristicas: MyText
+  area: MyText
+  tipo: MyString
+  precio: 1
+  mantenis: one
+
+two:
+  piso: 1
+  caracteristicas: MyText
+  area: MyText
+  tipo: MyString
+  precio: 1
+  mantenis: two

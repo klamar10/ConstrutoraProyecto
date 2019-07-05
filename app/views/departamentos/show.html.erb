@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Piso:</strong>
+  <%= @departamento.piso %>
+</p>
+
+<p>
+  <strong>Caracteristicas:</strong>
+  <%= @departamento.caracteristicas %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @departamento.area %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @departamento.tipo %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @departamento.precio %>
+</p>
+
+<p>
+  <strong>Mantenis:</strong>
+  <%= @departamento.mantenis %>
+</p>
+
+<%= link_to 'Edit', edit_departamento_path(@departamento) %> |
+<%= link_to 'Back', departamentos_path %>
