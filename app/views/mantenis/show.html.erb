@@ -25,5 +25,18 @@
   <%= @manteni.ubicacion %>
 </p>
 
+
+
+
+<h2>Sucursales</h2>
+<% if @manteni.departamento.any? %>
+  <ul>
+    <% @manteni.departamento.each do |departamentos| %>
+    <li><%= link_to departamentos, departamentos %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p> No hay Sucursales </p>
+  <% end %>
 <%= link_to 'Editar', edit_manteni_path(@manteni) %> |
 <%= link_to 'Atras', mantenis_path %>

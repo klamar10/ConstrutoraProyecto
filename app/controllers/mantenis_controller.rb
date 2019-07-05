@@ -15,10 +15,12 @@ class MantenisController < ApplicationController
   # GET /mantenis/new
   def new
     @manteni = Manteni.new
+    @manteni.departamentos.build
   end
 
   # GET /mantenis/1/edit
   def edit
+    @manteni.departamentos.build
   end
 
   # POST /mantenis
@@ -69,6 +71,7 @@ class MantenisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def manteni_params
-      params.require(:manteni).permit(:nombre, :caracteristicas, :areacomun, :pisos, :ubicacion)
+      params.require(:manteni).permit(:nombre, :caracteristicas, :areacomun, :pisos, :ubicacion, departamentos_attributes: [:id,
+      :piso, :_destroy])
     end
 end

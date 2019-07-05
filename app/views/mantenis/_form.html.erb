@@ -42,7 +42,27 @@
     <%= form.text_area :ubicacion, id: :manteni_ubicacion , :class => 'form-control mb-2 mr-sm-2'%>
   </div>
 <br>
+  <h2>Departamentos</h2>
+  <%= form.fields_for :departamentos do |departamentos| %>
+    <div class="departamentos_fields">
+      <div class="fields">
+        <%= departamentos.label :piso, "Piso" %>
+        <%= departamentos.text_field :piso %>
+         <%= departamentos.label :caracteristicas, "Caracteristicas" %>
+        <%= departamentos.text_field :caracteristicas %>
+         <%= departamentos.label :area, "Area" %>
+        <%= departamentos.text_field :area %>
+         <%= departamentos.label :tipo, "tipo" %>
+        <%= departamentos.text_field :tipo %>
+        <%= departamentos.label :precio, "Precio" %>
+        <%= departamentos.text_field :precio %>
 
+
+        <%= departamentos.check_box :_destroy %>
+        <%= departamentos.label :_destroy, "Borrar" %>
+      </div>
+    </div>
+  <% end %>
   <div class="actions">
     <%= form.submit %>
  
