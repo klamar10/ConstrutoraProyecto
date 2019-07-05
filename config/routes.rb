@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
 
 
+  resources :departamentos
   resources :usuarios
   resources :mantenis
   

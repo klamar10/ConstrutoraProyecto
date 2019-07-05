@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190704051328) do
+ActiveRecord::Schema.define(version: 20190705043403) do
+
+  create_table "departamentos", force: :cascade do |t|
+    t.integer "piso"
+    t.text "caracteristicas"
+    t.text "area"
+    t.string "tipo"
+    t.integer "precio"
+    t.integer "mantenis_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["mantenis_id"], name: "index_departamentos_on_mantenis_id"
+  end
 
   create_table "mantenis", force: :cascade do |t|
     t.string "nombre"
@@ -25,6 +37,17 @@ ActiveRecord::Schema.define(version: 20190704051328) do
   create_table "posts", force: :cascade do |t|
     t.string "tittle"
     t.text "descripttion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "regusus", force: :cascade do |t|
+    t.text "contrasena"
+    t.string "nombre"
+    t.string "apellido"
+    t.text "email"
+    t.integer "dni"
+    t.integer "telefono"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
