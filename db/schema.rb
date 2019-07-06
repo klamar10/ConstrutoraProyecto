@@ -54,15 +54,4 @@ ActiveRecord::Schema.define(version: 20190705043403) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "welcomes", force: :cascade do |t|
-    t.string "nombre"
-    t.string "apellido"
-    t.string "email"
-    t.integer "dni"
-    t.integer "telef"
-    t.string "contra"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
