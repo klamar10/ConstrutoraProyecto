@@ -72,6 +72,10 @@ class MantenisController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def manteni_params
       params.require(:manteni).permit(:nombre, :caracteristicas, :areacomun, :pisos, :ubicacion, departamentos_attributes: [:id,
+<<<<<<< HEAD
       :piso, :_destroy])
+=======
+      :piso, :caracteristicas, :area, :tipo, :precio, :_destroy])
+>>>>>>> 12d0f8e3b8fc762d4a10aba9ae08c844b116352f
     end
 end
