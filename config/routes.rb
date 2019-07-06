@@ -21,5 +21,4 @@ root :to => 'menu#inicio'
   get '/proyecto_vista/consultar'
   get '/ubicacion',  to: 'proyecto_vista#ubicacion'
 
-
 end

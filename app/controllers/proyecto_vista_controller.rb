@@ -5,10 +5,13 @@ class ProyectoVistaController < ApplicationController
 		# Declarando Data ficticia
 		@listProyecto = [
 			[ id = 7, name = 'Miraflores', imagen = '/assets/Proy1.jpg', metros = '120mts', areaComunes = 'No', cantBaños = 5,
-			  planos = [
-			  	[ imagen= 'park1.jpg', descripcion= 'Parque'],
-			  	[ imagen= 'hola.jpg', descripcion= 'mejorandola']
-			  ] 
+			  areascomunes = [
+			  	[ imagen = 'park1.jpg', descripcion= 'Parque'],
+			  	[ imagen = 'hola.jpg', descripcion= 'mejorandola']
+			  ], planos = [
+			  	[imagen = 'plano1.jpg', descripcion = 'duplex'],
+			  	[imagen = 'plano2.jpg', descripcion = 'flat']
+			  ]
 			],
 			[ id = 4, name = 'Barranco', imagen = '/assets/Proy2.jpg', metros = '500mts', areaComunes = 'Si', cantBaños = 6, 
 				planos = [
@@ -41,7 +44,11 @@ class ProyectoVistaController < ApplicationController
 			  planos = [
 			  	[ descripcion= 'Parque'],
 			  	[ imagen= 'hola.jpg', descripcion= 'mejorandola']
-			  ] 
+			  ], 
+			  planos = [
+			  	[imagen = 'plano1.jpg', descripcion = 'duplex'],
+			  	[imagen = 'plano2.jpg', descripcion = 'flat']
+			  ]
 			],
 		[ id = 4, name = 'Barranco', imagen = '/assets/Proy2.jpg', metros = '500mts', areaComunes = 'Si', cantBaños = 6, 
 				planos = [
@@ -71,7 +78,8 @@ class ProyectoVistaController < ApplicationController
 	end
 
 	def consultar
-	end
+		end
+		
 
 	def ubicacion
 	end
