@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="text-align: center;">Mantenimiento de proyecto</h1><br>
+<table class="table">
+  <thead class="thead-dark" style="text-align: center;">
+    <tr>
+      <th>Nombre</th>
+      <th>Caracteristicas</th>
+      <th>Areas Comunes</th>
+      <th>Pisos</th>
+      <th>Ubicacion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mantenis.each do |manteni| %>
+      <tr>
+        <td><%= manteni.nombre %></td>
+        <td><%= manteni.caracteristicas %></td>
+        <td><%= manteni.areacomun %></td>
+        <td><%= manteni.pisos %></td>
+        <td><%= manteni.ubicacion %></td>
+        <!--<td><%= link_to 'Registrar', manteni %></td>-->
+        <td><%= link_to 'Editar', edit_manteni_path(manteni) %></td>
+        <td><%= link_to 'Eliminar', manteni, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<div type="button" class="btn btn-outline-dark">
+<%= link_to 'Nuevo proyecto', new_manteni_path %>
+</div>

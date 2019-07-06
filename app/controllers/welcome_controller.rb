@@ -19,7 +19,7 @@ class WelcomeController < ApplicationController
   end
   
   def iniciosesion
-    render :layout => false
+    render :layout => true
   end
 
   def create

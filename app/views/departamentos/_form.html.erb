@@ -1,0 +1,47 @@
+<%= form_with(model: departamento, local: true) do |form| %>
+  <% if departamento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(departamento.errors.count, "error") %> prohibited this departamento from being saved:</h2>
+
+      <ul>
+      <% departamento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :piso %>
+    <%= form.number_field :piso, id: :departamento_piso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :caracteristicas %>
+    <%= form.text_area :caracteristicas, id: :departamento_caracteristicas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area %>
+    <%= form.text_area :area, id: :departamento_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo %>
+    <%= form.text_field :tipo, id: :departamento_tipo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio %>
+    <%= form.number_field :precio, id: :departamento_precio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mantenis_id %>
+    <%= form.text_field :mantenis_id, id: :departamento_mantenis_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

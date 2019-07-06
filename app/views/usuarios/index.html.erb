@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="text-align: center; letter-spacing: 3px">Usuarios</h1>
+
+<table class="table">
+  <thead>
+    <tr  class="table-primary">
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Email</th>
+      <th>Contraseña</th>
+      <th>Dni</th>
+      <th>Fecha de Nacimiento</th>
+      <th>Telefono</th>
+      <th>Direccion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuarios.each do |usuario| %>
+      <tr>
+        <td><%= usuario.nombre %></td>
+        <td><%= usuario.apellido %></td>
+        <td><%= usuario.email %></td>
+        <td><%= usuario.cont %></td>
+        <td><%= usuario.dni %></td>
+        <td><%= usuario.fech %></td>
+        <td><%= usuario.telef %></td>
+        <td><%= usuario.direccion %></td>
+        <!--<td><%= link_to 'Show', usuario %></td>-->
+        <td><%= link_to 'Editar', edit_usuario_path(usuario) %></td>
+        <td><%= link_to 'Eliminar', usuario, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Registrar nuevo usuario', new_usuario_path %>

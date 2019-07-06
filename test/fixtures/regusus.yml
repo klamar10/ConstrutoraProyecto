@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contrase«Òa: MyText
+  nombre: MyString
+  apellido: MyString
+  email: MyText
+  dni: 1
+  telefono: 1
+
+two:
+  contrase«Òa: MyText
+  nombre: MyString
+  apellido: MyString
+  email: MyText
+  dni: 1
+  telefono: 1
