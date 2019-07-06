@@ -40,10 +40,10 @@ class ProyectoVistaController < ApplicationController
 	def detalle
 		# Aca debe usarse Post.find(params[:id])
 		@listProyecto = [
-			[ id = 7, name = 'Miraflores', imagen = '/assets/Proy1.jpg', metros = '120mts', areaComunes = 'No', cantBaños = 5,
+			[ id = 7, name = 'Miraflores', imagen = '/assets/Proy1.jpg', metros = '120mts', areaComunes = 'No', cantBaños = 5, 
 			  planos = [
 			  	[ descripcion= 'Parque'],
-			  	[ imagen= 'hola.jpg', descripcion= 'mejorandola']
+			  	[ imagen= 'hola.jpg', descripcion= 'Juegos']
 			  ], 
 			  planos = [
 			  	[imagen = 'plano1.jpg', descripcion = 'duplex'],

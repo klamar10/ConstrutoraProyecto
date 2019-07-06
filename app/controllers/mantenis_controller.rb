@@ -73,7 +73,11 @@ class MantenisController < ApplicationController
     def manteni_params
       params.require(:manteni).permit(:nombre, :caracteristicas, :areacomun, :pisos, :ubicacion, departamentos_attributes: [:id,
 <<<<<<< HEAD
+<<<<<<< HEAD
       :piso, :_destroy])
+=======
+      :piso, :caracteristicas, :area, :tipo, :precio, :_destroy])
+>>>>>>> 12d0f8e3b8fc762d4a10aba9ae08c844b116352f
 =======
       :piso, :caracteristicas, :area, :tipo, :precio, :_destroy])
 >>>>>>> 12d0f8e3b8fc762d4a10aba9ae08c844b116352f
